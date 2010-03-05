@@ -4,7 +4,7 @@ class ntp {
 
     file { "ntpconf":
         name    => "/etc/ntp.conf",
-        content => template("ntp.conf.erb"),
+        content => template("ntp/ntp.conf.erb"),
         owner   => "root",
     }
 
